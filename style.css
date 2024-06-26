@@ -1,0 +1,38 @@
+/* Globalne varijable */
+:root {
+  --primary-color: #d4af37;
+  --background-color: #0a0a0a;
+  --text-color: #faebd7;
+  --font-family: "Roboto", sans-serif;
+  --font-secondary: "Playfair Display", serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.5;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Globalni stilovi */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
+  font-family: var(--font-secondary);
+}
