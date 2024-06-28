@@ -379,9 +379,23 @@ h2 {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .section-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .highlight-text p {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 767.98px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  .section-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .hero-section {
     height: 70vh;
   }
@@ -399,9 +413,22 @@ h2 {
     width: 8px;
     height: 8px;
   }
+  .clan-slika {
+    height: 220px;
+  }
+  .clan-ime {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 575.98px) {
+  h2 {
+    font-size: 2rem;
+  }
+  .section-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .hero-section {
     height: 60vh;
   }
@@ -418,5 +445,14 @@ h2 {
   .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+  .highlight-text p {
+    font-size: 0.9rem;
+  }
+  .clan-slika {
+    height: 200px;
+  }
+  .clan-ime {
+    font-size: 1.2rem;
   }
 }
