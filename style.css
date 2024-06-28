@@ -25,7 +25,6 @@ body {
   color: var(--text-color);
   margin: 0;
   padding: 0;
-  padding-bottom: 1500px;
 }
 
 h1,
@@ -76,7 +75,8 @@ h2 {
 
 .btn-primary:hover,
 .btn-primary:active,
-:not(.btn-check) + .btn:active {
+:not(.btn-check)+.btn:active,
+.btn:first-child:active {
   background-color: #b8902e;
   color: var(--text-color);
 }
@@ -150,7 +150,7 @@ h2 {
 .nav-item .nav-link.btn:hover,
 .nav-item .nav-link.btn:active,
 .nav-item .nav-link.btn:focus,
-:not(.nav-item .nav-link.btn-check) + .nav-item .nav-link.btn:active {
+:not(.nav-item .nav-link.btn-check)+.nav-item .nav-link.btn:active {
   background-color: #b8902e;
   color: var(--text-color);
 }
@@ -198,6 +198,7 @@ h2 {
 .offcanvas-body .social-network-icons-nav .nav-link {
   margin-bottom: 10px;
 }
+
 .social-network-icons-nav a {
   margin-left: 5px;
   margin-right: 5px;
@@ -206,23 +207,24 @@ h2 {
 .social-network-icons-nav a img {
   height: 30px;
   width: auto;
-  filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(1033%)
-    hue-rotate(337deg) brightness(94%) contrast(75%);
+  filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(1033%) hue-rotate(337deg) brightness(94%) contrast(75%);
 }
 
 .social-network-icons-nav .nav-link img {
   transition: transform 0.3s ease-in-out;
 }
+
 .social-network-icons-nav .nav-link:hover img {
   transform: translateY(-5px);
   animation: bounce 0.5s infinite alternate;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
-    hue-rotate(93deg) brightness(103%) contrast(103%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
+
 @keyframes bounce {
   0% {
     transform: translateY(-5px);
   }
+
   100% {
     transform: translateY(-10px);
   }
@@ -348,8 +350,7 @@ h2 {
 .clan-role img {
   height: 32px;
   width: auto;
-  filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(1033%)
-    hue-rotate(337deg) brightness(94%) contrast(75%);
+  filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(1033%) hue-rotate(337deg) brightness(94%) contrast(75%);
 }
 
 .clan-ime {
@@ -405,34 +406,64 @@ h2 {
 }
 
 .btn-icon img {
-  height: 1.5rem;
+  height: 1.6rem;
   width: auto;
 }
 
-.video-section .btn-primary {
+.video-section .btn-primary,
+.galerija-section .btn-primary,
+.video-section .btn-primary:active,
+.galerija-section .btn-primary:active {
   color: var(--background-color);
 }
 
+.galerija-slika a {
+  max-height: 200px;
+}
+
+.galerija-slika img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.galerija-slika {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.galerija-slika a {
+  flex: 1 0 20%;
+  max-width: 20%;
+  margin-bottom: 10px;
+}
+
+
 /* Responsive */
 
-@media (max-width: 1399.98px) {
-}
+@media (max-width: 1399.98px) {}
 
 @media (max-width: 1199.98px) {
   .hero-text h1 {
     font-size: 3rem;
   }
+
   .hero-text h4 {
     font-size: 1.2rem;
   }
+
   .btn {
     font-size: 1.3rem;
     padding: 10px 25px;
   }
+
   .navbar-brand img {
     height: 50px;
     width: auto;
   }
+
   .nav-link {
     font-size: 1rem;
   }
@@ -442,19 +473,28 @@ h2 {
   .hero-text h1 {
     font-size: 2.5rem;
   }
+
   .hero-text h4 {
     font-size: 1rem;
   }
+
   .navbar {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
   .section-padding {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
   .highlight-text p {
     font-size: 1rem;
+  }
+
+  .galerija-slika a {
+    flex-basis: 45%;
+    max-width: 45%;
   }
 }
 
@@ -462,30 +502,38 @@ h2 {
   h2 {
     font-size: 2.5rem;
   }
+
   .section-padding {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
   .hero-section {
     height: 70vh;
   }
+
   .hero-text h1 {
     font-size: 1.8rem;
   }
+
   .hero-text h4 {
     font-size: 0.8rem;
   }
+
   .btn {
     font-size: 1.2rem;
     padding: 10px 20px;
   }
+
   .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
   }
+
   .clan-slika {
     height: 220px;
   }
+
   .clan-ime {
     font-size: 1.3rem;
   }
@@ -495,33 +543,42 @@ h2 {
   h2 {
     font-size: 2rem;
   }
+
   .section-padding {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
   .hero-section {
     height: 60vh;
   }
+
   .hero-text h1 {
     font-size: 1.3rem;
   }
+
   .hero-text h4 {
     font-size: 0.9rem;
   }
+
   .btn {
     font-size: 1rem;
     padding: 10px 20px;
   }
+
   .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
   .highlight-text p {
     font-size: 0.9rem;
   }
+
   .clan-slika {
     height: 200px;
   }
+
   .clan-ime {
     font-size: 1.2rem;
   }

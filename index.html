@@ -1,285 +1,303 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tremolo band</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <nav
-        class="navbar navbar-expand-lg navbar-light fixed-top d-flex align-items-center"
-      >
-        <div class="container d-flex align-items-center">
-          <a class="navbar-brand" href="index.html">
-            <img src="img/tremolo-gold.png" alt="Logo" />
-          </a>
-          <button
-            class="navbar-toggler d-lg-none"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-center d-none d-lg-flex"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav mx-auto d-flex align-items-center">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Početna</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="galerija.html">Galerija</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link btn btn-primary" href="kontakt.html"
-                  >KONTAKT</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div
-            class="navbar-nav ml-auto social-network-icons-nav d-none d-lg-flex"
-          >
-            <a class="nav-link" href="https://instagram.com" target="_blank">
-              <img src="img/instagram.svg" alt="Instagram Icon" />
-            </a>
-            <a class="nav-link" href="https://youtube.com" target="_blank">
-              <img src="img/youtube.svg" alt="YouTube Icon" />
-            </a>
-            <a class="nav-link" href="https://fb.com" target="_blank">
-              <img src="img/facebook.svg" alt="Facebook Icon" />
-            </a>
-          </div>
-        </div>
-      </nav>
-    </header>
 
-    <div
-      class="offcanvas offcanvas-end d-lg-none"
-      tabindex="-1"
-      id="offcanvasNavbar"
-      aria-labelledby="offcanvasNavbarLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Meni</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul
-          class="navbar-nav justify-content-center text-center flex-grow-1 pe-3"
-        >
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Početna</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="galerija.html">Galerija</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">Blog</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link btn btn-primary mx-auto" href="kontakt.html"
-              >KONTAKT</a
-            >
-          </li>
-        </ul>
-        <div
-          class="navbar-nav ml-auto social-network-icons-nav d-flex d-lg-none mt-4 justify-content-center align-items-center"
-        >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tremolo band</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/tremolo-gold.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="navbarNav">
+          <ul class="navbar-nav mx-auto d-flex align-items-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Početna</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galerija.html">Galerija</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary" href="kontakt.html">KONTAKT</a>
+          </ul>
+        </div>
+        <div class="navbar-nav ml-auto social-network-icons-nav d-none d-lg-flex">
           <a class="nav-link" href="https://instagram.com" target="_blank">
-            <img src="img/instagram.svg" alt="Instagram Icon" />
+            <img src="img/instagram.svg" alt="Instagram Icon">
           </a>
           <a class="nav-link" href="https://youtube.com" target="_blank">
-            <img src="img/youtube.svg" alt="YouTube Icon" />
+            <img src="img/youtube.svg" alt="YouTube Icon">
           </a>
           <a class="nav-link" href="https://fb.com" target="_blank">
-            <img src="img/facebook.svg" alt="Facebook Icon" />
+            <img src="img/facebook.svg" alt="Facebook Icon">
           </a>
         </div>
       </div>
-    </div>
+    </nav>
+  </header>
 
-    <main>
-      <!-- Hero -->
-      <section class="hero-section">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div
-              class="swiper-slide"
-              style="background-image: url('slike/hero1.jpg')"
-            >
-              <div class="overlay"></div>
+  <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar"
+    aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Meni</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav justify-content-center text-center flex-grow-1 pe-3">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Početna</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="galerija.html">Galerija</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item text-center">
+          <a class="nav-link btn btn-primary mx-auto" href="kontakt.html">KONTAKT</a>
+        </li>
+      </ul>
+      <div
+        class="navbar-nav ml-auto social-network-icons-nav d-flex d-lg-none mt-4 justify-content-center align-items-center">
+        <a class="nav-link" href="https://instagram.com" target="_blank">
+          <img src="img/instagram.svg" alt="Instagram Icon">
+        </a>
+        <a class="nav-link" href="https://youtube.com" target="_blank">
+          <img src="img/youtube.svg" alt="YouTube Icon">
+        </a>
+        <a class="nav-link" href="https://fb.com" target="_blank">
+          <img src="img/facebook.svg" alt="Facebook Icon">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero-section">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url('slike/hero1.jpg')">
+            <div class="overlay"></div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('slike/hero2.jpg')">
+            <div class="overlay"></div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('slike/hero3.jpg')">
+            <div class="overlay"></div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="hero-text">
+        <h1>Zajedno Slavimo Svaki Trenutak</h1>
+        <h4>Vaše Vesele Trenutke Činimo Posebnima</h4>
+        <a href="#" class="btn btn-primary">KONTAKT</a>
+      </div>
+    </section>
+
+    <!-- O nama -->
+    <section class="about-section section-padding">
+      <div class="container">
+        <h2 class="text-center mb-4">O nama</h2>
+        <div class="highlight-text">
+          <p>
+            Tremolo je bend čiji počeci sežu u 2000. godinu, što nas čini jednim od najdugovječnijih sastava na muzičkoj
+            sceni. Sa višegodišnjim iskustvom u svetu muzike, specijalizirani smo za pružanje nezaboravnih trenutaka na
+            svadbama, krštenjima, rođendanima, kao i u noćnim klubovima širom regiona. Naša strast prema muzici
+            prepoznatljiva je u svakoj izvedbi, stvarajući atmosferu koja ostaje urezana u sećanja naših slušalaca.
+          </p>
+        </div>
+        <div class="clanovi-benda mt-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-4 col-lg-3 mb-5 mb-lg-0">
+              <div class="clan-card">
+                <div class="clan-slika">
+                  <img src="slike/clan1.jpg" alt="">
+                  <div class="clan-role">
+                    <img src="img/guitar.svg" alt="">
+                  </div>
+                </div>
+                <div class="clan-ime">Nemanja</div>
+              </div>
             </div>
-            <div
-              class="swiper-slide"
-              style="background-image: url('slike/hero2.jpg')"
-            >
-              <div class="overlay"></div>
+            <div class="col-12 col-md-4 col-lg-3 mb-5 mb-lg-0">
+              <div class="clan-card">
+                <div class="clan-slika">
+                  <img src="slike/clan2.jpg" alt="">
+                  <div class="clan-role">
+                    <img src="img/microphone.svg" alt="">
+                  </div>
+                </div>
+                <div class="clan-ime">Dijana</div>
+              </div>
             </div>
-            <div
-              class="swiper-slide"
-              style="background-image: url('slike/hero3.jpg')"
-            >
-              <div class="overlay"></div>
+            <div class="col-12 col-md-4 col-lg-3 mb-5 mb-lg-0">
+              <div class="clan-card">
+                <div class="clan-slika">
+                  <img src="slike/clan3.jpg" alt="">
+                  <div class="clan-role">
+                    <img src="img/piano-keyboard.svg" alt="">
+                  </div>
+                </div>
+                <div class="clan-ime">Dragan</div>
+              </div>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
-        <div class="hero-text">
-          <h1>Zajedno Slavimo Svaki Trenutak</h1>
-          <h4>Vaše Vesele Trenutke Činimo Posebnima</h4>
-          <a href="#" class="btn btn-primary">KONTAKT</a>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- O nama -->
-      <section class="about-section section-padding">
-        <div class="container">
-          <h2 class="text-center mb-4">O nama</h2>
+    <!-- Repertoar -->
+    <section class="section-padding repertoar-section bg-img-section"
+      style="background-image: url(slike/nightclub.jpg)">
+      <div class="container">
+        <div class="section-content">
+          <h2 class="text-center mb-4">Naš repertoar</h2>
           <div class="highlight-text">
             <p>
-              Tremolo je bend čiji počeci sežu u 2000. godinu, što nas čini
-              jednim od najdugovječnijih sastava na muzičkoj sceni. Sa
-              višegodišnjim iskustvom u svetu muzike, specijalizirani smo za
-              pružanje nezaboravnih trenutaka na svadbama, krštenjima,
-              rođendanima, kao i u noćnim klubovima širom regiona. Naša strast
-              prema muzici prepoznatljiva je u svakoj izvedbi, stvarajući
-              atmosferu koja ostaje urezana u sećanja naših slušalaca.
+              U našem bogatom repertoaru imamo više od 2000 pesama koje obuhvataju domaće i strane hitove, rock, pop,
+              narodnu muziku i mnoge druge žanrove. Kod nas možete izabrati između programskog izbora pesama ili
+              naručiti omiljene pesme po želji vaših gostiju. Za detaljan pregled našeg repertoara kliknite na dugme
+              ispod:
             </p>
-          </div>
-          <div class="clanovi-benda mt-5">
-            <div class="row justify-content-center">
-              <div class="col-12 col-md-4 col-lg-3 mb-5 mb-lg-0">
-                <div class="clan-card">
-                  <div class="clan-slika">
-                    <img src="slike/clan1.jpg" alt="" />
-                    <div class="clan-role">
-                      <img src="img/guitar.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="clan-ime">Nemanja</div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-3 mb-5 mb-lg-0">
-                <div class="clan-card">
-                  <div class="clan-slika">
-                    <img src="slike/clan2.jpg" alt="" />
-                    <div class="clan-role">
-                      <img src="img/microphone.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="clan-ime">Dijana</div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-3 mb-5 mb-lg-0">
-                <div class="clan-card">
-                  <div class="clan-slika">
-                    <img src="slike/clan3.jpg" alt="" />
-                    <div class="clan-role">
-                      <img src="img/piano-keyboard.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="clan-ime">Dragan</div>
-                </div>
-              </div>
+            <div class="btn-wrap text-center mt-4">
+              <a href="" class="btn btn-gold-outline">Preuzmi repertoar</a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Repertoar -->
-      <section
-        class="section-padding repertoar-section bg-img-section"
-        style="background-image: url(slike/nightclub.jpg)"
-      >
-        <div class="container">
-          <div class="section-content">
-            <h2 class="text-center mb-4">Naš repertoar</h2>
-            <div class="highlight-text">
-              <p>
-                U našem bogatom repertoaru imamo više od 2000 pesama koje
-                obuhvataju domaće i strane hitove, rock, pop, narodnu muziku i
-                mnoge druge žanrove. Kod nas možete izabrati između programskog
-                izbora pesama ili naručiti omiljene pesme po želji vaših
-                gostiju. Za detaljan pregled našeg repertoara kliknite na dugme
-                ispod:
-              </p>
-              <div class="btn-wrap text-center mt-4">
-                <a href="" class="btn btn-gold-outline">Preuzmi repertoar</a>
-              </div>
-            </div>
-          </div>
+    <!-- Video -->
+    <section class="section-padding video-section">
+      <div class="container">
+        <h2 class="mb-4 text-center">Video</h2>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/-L7h4zhrJGY?si=BZEicBAq18dgpnST" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-      </section>
-
-      <!-- Video -->
-
-      <section class="section-padding video-section">
-        <div class="container">
-          <h2 class="mb-4 text-center">Video</h2>
-          <div class="video-wrapper">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/-L7h4zhrJGY?si=BZEicBAq18dgpnST"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="btn-wrapper text-center">
-            <a class="btn btn-primary mt-5" href="" target="_blank"
-              ><span class="btn-icon"><img src="img/youtube.svg" alt="" /></span
-              >Youtube kanal</a
-            >
-          </div>
+        <div class="btn-wrapper text-center">
+          <a class="btn btn-primary mt-5" href="" target="_blank">
+            <span class="btn-icon"><img src="img/youtube.svg" alt=""></span>
+            Youtube kanal
+          </a>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="assets/main.js"></script>
-  </body>
+    <!-- Galerija -->
+    <section class="section-padding galerija-section">
+      <div class="container">
+        <h2 class="mb-4 text-center">Galerija</h2>
+        <div class="galerija-slika ">
+          <a data-fancybox="gallery" href="slike/hero1.jpg">
+            <img src="slike/hero1.jpg" alt="">
+          </a>
+          <a data-fancybox="gallery" href="slike/hero2.jpg">
+            <img src="slike/hero2.jpg" alt="">
+          </a>
+          <a data-fancybox="gallery" href="slike/hero3.jpg">
+            <img src="slike/hero3.jpg" alt="">
+          </a>
+          <a data-fancybox="gallery" href="slike/hero1.jpg">
+            <img src="slike/hero1.jpg" alt="">
+          </a>
+          <a data-fancybox="gallery" href="slike/hero2.jpg">
+            <img src="slike/hero2.jpg" alt="">
+          </a>
+          <a data-fancybox="gallery" href="slike/hero3.jpg">
+            <img src="slike/hero3.jpg" alt="">
+          </a>
+          <a data-fancybox="gallery" href="slike/hero1.jpg">
+            <img src="slike/hero1.jpg" alt="">
+          </a>
+          <a data-fancybox="gallery" href="slike/hero2.jpg">
+            <img src="slike/hero2.jpg" alt="">
+          </a>
+          <a data-fancybox="gallery" href="slike/hero3.jpg">
+            <img src="slike/hero3.jpg" alt="">
+          </a>
+          <a data-fancybox="gallery" href="slike/hero1.jpg">
+            <img src="slike/hero1.jpg" alt="">
+          </a>
+          <a data-fancybox="gallery" href="slike/hero2.jpg">
+            <img src="slike/hero2.jpg" alt="">
+          </a>
+          <a data-fancybox="gallery" href="slike/hero3.jpg">
+            <img src="slike/hero3.jpg" alt="">
+          </a>
+        </div>
+        <div class="btn-wrapper text-center">
+          <a class="btn btn-primary mt-5" href="">
+            <span class="btn-icon">
+              <img src="img/image-solid.svg" alt="">
+            </span>
+            Pogledaj sve
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="assets/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var swiper = new Swiper(".swiper-container", {
+        loop: true, // Omogućava beskonačnu petlju
+        autoplay: {
+          delay: 5000, // Automatsko klizanje svakih 5 sekundi
+          disableOnInteraction: false, // Omogućava autoplay nakon interakcije korisnika
+        },
+        pagination: {
+          el: ".swiper-pagination", // Element za paginaciju
+          clickable: true, // Omogućava klik na paginaciju
+        },
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options here
+        // For example:
+        loop: true, // Enable infinite loop
+        transitionEffect: "slide", // Transition effect
+        buttons: ["slideShow", "fullScreen", "thumbs", "close"] // Displayed buttons
+      });
+    });
+  </script>
+</body>
+
 </html>
