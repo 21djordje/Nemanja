@@ -33,18 +33,16 @@
             <img src="img/tremolo-gold.png" alt="Logo" />
           </a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler d-lg-none"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-center"
+            class="collapse navbar-collapse justify-content-center d-none d-lg-flex"
             id="navbarNav"
           >
             <ul class="navbar-nav mx-auto d-flex align-items-center">
@@ -58,7 +56,9 @@
                 <a class="nav-link" href="blog.html">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link btn btn-primary" href="">Kontakt</a>
+                <a class="nav-link btn btn-primary" href="kontakt.html"
+                  >Kontakt</a
+                >
               </li>
             </ul>
           </div>
@@ -78,6 +78,56 @@
         </div>
       </nav>
     </header>
+
+    <div
+      class="offcanvas offcanvas-end d-lg-none"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Meni</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul
+          class="navbar-nav justify-content-center text-center flex-grow-1 pe-3"
+        >
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Početna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galerija.html">Galerija</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link btn btn-primary mx-auto" href="kontakt.html"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+        <div
+          class="navbar-nav ml-auto social-network-icons-nav d-flex d-lg-none mt-4 justify-content-center align-items-center"
+        >
+          <a class="nav-link" href="https://instagram.com" target="_blank">
+            <img src="img/instagram.svg" alt="Instagram Icon" />
+          </a>
+          <a class="nav-link" href="https://youtube.com" target="_blank">
+            <img src="img/youtube.svg" alt="YouTube Icon" />
+          </a>
+          <a class="nav-link" href="https://fb.com" target="_blank">
+            <img src="img/facebook.svg" alt="Facebook Icon" />
+          </a>
+        </div>
+      </div>
+    </div>
 
     <main>
       <!-- Hero -->
