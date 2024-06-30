@@ -14,6 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
 /* Globalni stilovi */
@@ -458,6 +459,47 @@ h2 {
 }
 
 
+/* Footer */
+
+.footer {
+  background-color: var(--background-color);
+  color: #ffffff;
+  padding: 20px 0;
+}
+.footer .footer-logo img {
+  width: 150px;
+}
+.footer .footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+.footer .social-icons a {
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+
+footer .social-icons img {
+  transition: width 0.3s ease, height 0.3s ease;
+  height: 20px;
+  width: auto;
+  filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(1033%) hue-rotate(337deg) brightness(94%) contrast(75%);
+}
+
+footer .social-icons img:hover {
+  filter: brightness(0) saturate(100%) invert(97%) sepia(100%) saturate(13%) hue-rotate(209deg) brightness(105%) contrast(105%);
+}
+
+
+
 /* Responsive */
 
 @media (max-width: 1399.98px) {}
@@ -609,7 +651,6 @@ h2 {
     font-size: 1.2rem;
   }
 }
-
 
 
 
