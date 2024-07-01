@@ -731,6 +731,9 @@ footer .social-icons img:hover {
   .clan-slika {
     height: 200px;
   }
+  .rezervacija-section {
+    background-position: center;
+  }
 }
 
 @media (max-width: 767.98px) {
