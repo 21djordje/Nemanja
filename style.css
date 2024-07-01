@@ -458,6 +458,118 @@ h2 {
   margin-bottom: 10px;
 }
 
+/* Rezervacija */
+
+.rezervacija-section {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.rezervacija-section::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: '';
+  background-color: var(--background-color);
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.rezervacije-kontakt {
+  margin-right: 20px;
+}
+
+.rezervacije-kontakt a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+  transition:  0.3s ease;
+}
+
+.rezervacije-kontakt a:hover{
+  color: var(--primary-color);
+}
+
+.rezervacije-kontakt:last-child {
+  margin-right: 0px;
+}
+
+.rezervacije-kontakt img {
+  filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(1033%) hue-rotate(337deg) brightness(94%) contrast(75%);
+  height: 24px;
+  width: auto;
+}
+
+.rezervacije-tekst p:last-child{
+  margin-bottom: 0px;
+}
+
+
+.kalendar-blok h4 {
+  color: var(--text-color);
+}
+
+.kalendar-blok {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem;
+
+}
+
+
+#calendar {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.fc a {
+  color: var(--background-color);
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.fc-toolbar-title {
+  color: var(--background-color);
+  font-family: var(--font-secondary);
+  font-weight: bold;
+}
+
+.fc-daygrid-event-harness a{
+  background-color: transparent;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.fc .fc-button-primary:focus, .fc .fc-button-primary:not(:disabled).fc-button-active:focus, .fc .fc-button-primary:not(:disabled):active:focus {
+  box-shadow: none;
+}
+
+.fc-list-empty-cushion {
+  color: var(--background-color);
+}
+
+.fc-list-event-time {
+  display: none;
+}
+
+.fc .fc-list-event-dot {
+  border-color: red;
+}
+
+.kalendar-tekst {
+  max-width: 600px;
+  margin: 0 auto;
+}
 
 /* Footer */
 
@@ -486,7 +598,6 @@ h2 {
   font-size: 1.5rem;
 }
 
-
 footer .social-icons img {
   transition: width 0.3s ease, height 0.3s ease;
   height: 20px;
@@ -496,6 +607,62 @@ footer .social-icons img {
 
 footer .social-icons img:hover {
   filter: brightness(0) saturate(100%) invert(97%) sepia(100%) saturate(13%) hue-rotate(209deg) brightness(105%) contrast(105%);
+}
+
+/* Kontakt Modal */
+
+.modal-body, .modal-header {
+  background-color: rgba(10, 10, 10, 0.9) !important;
+}
+
+.modal-content {
+  --bs-modal-bg: transparent;
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.modal-icons {
+  margin-right: 5px;
+}
+
+.modal-icons img {
+  height: 24px;
+  width: auto;
+  filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(1033%) hue-rotate(337deg) brightness(94%) contrast(75%);
+}
+
+.modal-contact-info {
+  margin-right: 10px;
+}
+
+.modal-contact-info:last-child {
+  margin-right: 0px;
+}
+
+.modal-contact-info a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition:  0.3s ease-in-out;
+}
+
+.modal-contact-info a:hover {
+  color: var(--primary-color);
+}
+
+.form-control {
+  border: 1px solid var(--background-color);
+  color: var(--background-color);
+}
+
+.form-control:focus {
+  border: 1px solid var(--background-color);
+  box-shadow: none;
+}
+
+.form-floating label {
+  color: var(--background-color);
 }
 
 
@@ -508,21 +675,17 @@ footer .social-icons img:hover {
   .hero-text h1 {
     font-size: 3rem;
   }
-
   .hero-text h4 {
     font-size: 1.2rem;
   }
-
   .btn {
     font-size: 1.3rem;
     padding: 10px 25px;
   }
-
   .navbar-brand img {
     height: 50px;
     width: auto;
   }
-
   .nav-link {
     font-size: 1rem;
   }
@@ -532,31 +695,35 @@ footer .social-icons img:hover {
   .clan-info p{
     font-size: 14px;
   }
+  .rezervacije-tekst p {
+    font-size: 14px;
+  }
+  .rezervacije-kontakt a {
+    font-size: 1.2rem;
+  }
+  .rezervacije-kontakt img {
+    height: 20px;
+  }
 }
 
 @media (max-width: 991.98px) {
   .hero-text h1 {
     font-size: 2.5rem;
   }
-
   .hero-text h4 {
     font-size: 1rem;
   }
-
   .navbar {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
   .section-padding {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-
   .highlight-text p {
     font-size: 1rem;
   }
-
   .galerija-slika a {
     flex-basis: 45%;
     max-width: 45%;
@@ -570,40 +737,38 @@ footer .social-icons img:hover {
   h2 {
     font-size: 2.5rem;
   }
-
   .section-padding {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-
   .hero-section {
     height: 70vh;
   }
-
   .hero-text h1 {
     font-size: 1.8rem;
   }
-
   .hero-text h4 {
     font-size: 0.8rem;
   }
-
   .btn {
     font-size: 1.2rem;
     padding: 10px 20px;
   }
-
   .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
   }
-
   .clan-slika {
     height: 220px;
   }
-
   .clan-ime {
     font-size: 1.3rem;
+  }
+  .rezervacije-kontakt a{
+    font-size: 16px;
+  }
+  .rezervacije-kontakt img {
+    height: 16px;
   }
 }
 
@@ -611,52 +776,52 @@ footer .social-icons img:hover {
   h2 {
     font-size: 2rem;
   }
-
   .section-padding {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
   .hero-section {
     height: 60vh;
   }
-
   .hero-text h1 {
     font-size: 1.3rem;
   }
-
   .hero-text h4 {
     font-size: 0.9rem;
   }
-
   .btn {
     font-size: 1rem;
     padding: 10px 20px;
   }
-
   .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-
   .highlight-text p {
     font-size: 0.9rem;
   }
-
   .clan-slika {
     height: 200px;
   }
-
   .clan-ime {
     font-size: 1.2rem;
   }
+  .rezervacije-kontakt a{
+    font-size: 14px;
+  }
+  .rezervacije-kontakt img {
+    height: 14px;
+  }
+  .fc .fc-toolbar-title {
+    font-size: 18px;
+  } 
+  .fc .fc-today-button {
+    display: none;
+  }
+  .fc .fc-button {
+    font-size: 16px;
+  }
 }
-
-
-
-
-
-
 
 
 
