@@ -1,484 +1,648 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tremolo band</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tremolo band</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.js"></script>
-  <script src="https://apis.google.com/js/api.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top d-flex align-items-center">
-      <div class="container d-flex align-items-center">
-        <a class="navbar-brand" href="index.html">
-          <img src="img/tremolo-gold.png" alt="Logo">
-        </a>
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="navbarNav">
-          <ul class="navbar-nav mx-auto d-flex align-items-center">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Početna</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="galerija.html">Galerija</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">KONTAKT</a>
-          </ul>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top d-flex align-items-center"
+      >
+        <div class="container d-flex align-items-center">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/tremolo-gold.png" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center d-none d-lg-flex"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav mx-auto d-flex align-items-center">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Početna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galerija.html">Galerija</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                  >KONTAKT</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="navbar-nav ml-auto social-network-icons-nav d-none d-lg-flex"
+          >
+            <a class="nav-link" href="https://instagram.com" target="_blank">
+              <img src="img/instagram.svg" alt="Instagram Icon" />
+            </a>
+            <a class="nav-link" href="https://youtube.com" target="_blank">
+              <img src="img/youtube.svg" alt="YouTube Icon" />
+            </a>
+            <a class="nav-link" href="https://fb.com" target="_blank">
+              <img src="img/facebook.svg" alt="Facebook Icon" />
+            </a>
+          </div>
         </div>
-        <div class="navbar-nav ml-auto social-network-icons-nav d-none d-lg-flex">
+      </nav>
+    </header>
+
+    <div
+      class="offcanvas offcanvas-end d-lg-none"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Meni</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul
+          class="navbar-nav justify-content-center text-center flex-grow-1 pe-3"
+        >
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Početna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galerija.html">Galerija</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item text-center">
+            <a
+              class="nav-link btn btn-primary mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#contactModal"
+              >KONTAKT</a
+            >
+          </li>
+        </ul>
+        <div
+          class="navbar-nav ml-auto social-network-icons-nav d-flex d-lg-none mt-4 justify-content-center align-items-center"
+        >
           <a class="nav-link" href="https://instagram.com" target="_blank">
-            <img src="img/instagram.svg" alt="Instagram Icon">
+            <img src="img/instagram.svg" alt="Instagram Icon" />
           </a>
           <a class="nav-link" href="https://youtube.com" target="_blank">
-            <img src="img/youtube.svg" alt="YouTube Icon">
+            <img src="img/youtube.svg" alt="YouTube Icon" />
           </a>
           <a class="nav-link" href="https://fb.com" target="_blank">
-            <img src="img/facebook.svg" alt="Facebook Icon">
+            <img src="img/facebook.svg" alt="Facebook Icon" />
           </a>
         </div>
-      </div>
-    </nav>
-  </header>
-
-  <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar"
-    aria-labelledby="offcanvasNavbarLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Meni</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <ul class="navbar-nav justify-content-center text-center flex-grow-1 pe-3">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Početna</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="galerija.html">Galerija</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
-        </li>
-        <li class="nav-item text-center">
-          <a class="nav-link btn btn-primary mx-auto" data-bs-toggle="modal" data-bs-target="#contactModal">KONTAKT</a>
-        </li>
-      </ul>
-      <div
-        class="navbar-nav ml-auto social-network-icons-nav d-flex d-lg-none mt-4 justify-content-center align-items-center">
-        <a class="nav-link" href="https://instagram.com" target="_blank">
-          <img src="img/instagram.svg" alt="Instagram Icon">
-        </a>
-        <a class="nav-link" href="https://youtube.com" target="_blank">
-          <img src="img/youtube.svg" alt="YouTube Icon">
-        </a>
-        <a class="nav-link" href="https://fb.com" target="_blank">
-          <img src="img/facebook.svg" alt="Facebook Icon">
-        </a>
       </div>
     </div>
-  </div>
 
-  <main>
-    <!-- Hero -->
-    <section class="hero-section">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url('slike/hero1.jpg')">
-            <div class="overlay"></div>
-          </div>
-          <div class="swiper-slide" style="background-image: url('slike/hero2.jpg')">
-            <div class="overlay"></div>
-          </div>
-          <div class="swiper-slide" style="background-image: url('slike/hero3.jpg')">
-            <div class="overlay"></div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <div class="hero-text">
-        <h1>Zajedno Slavimo Svaki Trenutak</h1>
-        <h4>Vaše Vesele Trenutke Činimo Posebnima</h4>
-        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">KONTAKT</a>
-      </div>
-    </section>
-
-    <!-- O nama -->
-    <section class="about-section section-padding">
-      <div class="container">
-        <h2 class="text-center mb-4">O nama</h2>
-        <div class="highlight-text">
-          <p>
-            Tremolo je bend čiji počeci sežu u 2000. godinu, što nas čini jednim od najdugovječnijih sastava na muzičkoj
-            sceni. Sa višegodišnjim iskustvom u svetu muzike, specijalizirani smo za pružanje nezaboravnih trenutaka na
-            svadbama, krštenjima, rođendanima, kao i u noćnim klubovima širom regiona. Naša strast prema muzici
-            prepoznatljiva je u svakoj izvedbi, stvarajući atmosferu koja ostaje urezana u sećanja naših slušalaca.
-          </p>
-        </div>
-        <div class="clanovi-benda mt-5">
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-4 col-lg-3 mb-5 mb-lg-0">
-              <div class="clan-card" data-aos="fade-up">
-                <div class="clan-slika">
-                  <img src="slike/clan1.jpg" alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave">
-                </div>
-                <div class="clan-ime">Nemanja</div>
-                <div class="clan-info">
-                  <h4>Nemanja</h4>
-                  <div class="clan-roles">
-                    <img src="img/guitar.svg" alt="">
-                    <img src="img/microphone.svg" alt="">
-                  </div>
-                  <p>Počeo je da svira u bendu 2005. godine. Dugogodišnje iskustvo u raznim žanrovima.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4 col-lg-3 mb-5 mb-lg-0">
-              <div class="clan-card" data-aos="fade-up">
-                <div class="clan-slika">
-                  <img src="slike/clan2.jpg" alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave">
-                </div>
-                <div class="clan-ime">Dijana</div>
-                <div class="clan-info">
-                  <h4>Dijana</h4>
-                  <div class="clan-roles">
-                    <img src="img/microphone.svg" alt="">
-                  </div>
-                  <p>Počeo je da svira u bendu 2005. godine. Dugogodišnje iskustvo u raznim žanrovima.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4 col-lg-3 mb-5 mb-lg-0">
-              <div class="clan-card" data-aos="fade-up">
-                <div class="clan-slika">
-                  <img src="slike/clan3.jpg" alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave">
-                </div>
-                <div class="clan-ime">Dragan</div>
-                <div class="clan-info">
-                  <h4>Dragan</h4>
-                  <div class="clan-roles">
-                    <img src="img/piano-keyboard.svg" alt="">
-                    <img src="img/microphone.svg" alt="">
-                  </div>
-                  <p>Počeo je da svira u bendu 2005. godine. Dugogodišnje iskustvo u raznim žanrovima.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Repertoar -->
-    <section class="section-padding repertoar-section bg-img-section" style="background-image: url(slike/hero3.jpg)">
-      <div class="container">
-        <div class="section-content">
-          <h2 class="text-center mb-4">Naš repertoar</h2>
-          <div class="highlight-text">
-            <p>
-              U našem bogatom repertoaru imamo više od 2000 pesama koje obuhvataju domaće i strane hitove, rock, pop,
-              narodnu muziku i mnoge druge žanrove. Kod nas možete izabrati između programskog izbora pesama ili
-              naručiti omiljene pesme po želji vaših gostiju. Za detaljan pregled našeg repertoara kliknite na dugme
-              ispod:
-            </p>
-            <div class="btn-wrap text-center mt-4">
-              <a href="" class="btn btn-gold-outline">Preuzmi repertoar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Video -->
-    <section class="section-padding video-section">
-      <div class="container">
-        <h2 class="mb-4 text-center">Video</h2>
-        <div class="video-wrapper" data-aos="fade-up">
-          <iframe src="https://www.youtube.com/embed/-L7h4zhrJGY?si=BZEicBAq18dgpnST" title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="btn-wrapper text-center">
-          <a class="btn btn-primary mt-5" href="" target="_blank">
-            <span class="btn-icon"><img src="img/youtube.svg"
-                alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"></span>
-            Youtube kanal
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Galerija -->
-    <section class="section-padding galerija-section">
-      <div class="container">
-        <h2 class="mb-4 text-center">Galerija</h2>
-        <div class="galerija-slika">
-          <a data-fancybox="gallery" href="slike/hero1.jpg">
-            <img src="slike/hero1.jpg" alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
-              data-aos="zoom-in">
-          </a>
-          <a data-fancybox="gallery" href="slike/hero2.jpg">
-            <img src="slike/hero2.jpg" alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
-              data-aos="zoom-in">
-          </a>
-          <a data-fancybox="gallery" href="slike/hero3.jpg">
-            <img src="slike/hero3.jpg" alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
-              data-aos="zoom-in">
-          </a>
-          <a data-fancybox="gallery" href="slike/hero1.jpg">
-            <img src="slike/hero1.jpg" alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
-              data-aos="zoom-in">
-          </a>
-          <a data-fancybox="gallery" href="slike/hero2.jpg">
-            <img src="slike/hero2.jpg" alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
-              data-aos="zoom-in">
-          </a>
-          <a data-fancybox="gallery" href="slike/hero3.jpg">
-            <img src="slike/hero3.jpg" alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
-              data-aos="zoom-in">
-          </a>
-          <a data-fancybox="gallery" href="slike/hero1.jpg">
-            <img src="slike/hero1.jpg" alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
-              data-aos="zoom-in">
-          </a>
-          <a data-fancybox="gallery" href="slike/hero2.jpg">
-            <img src="slike/hero2.jpg" alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
-              data-aos="fade-up">
-          </a>
-          <a data-fancybox="gallery" href="slike/hero3.jpg">
-            <img src="slike/hero3.jpg" alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
-              data-aos="zoom-in">
-          </a>
-          <a data-fancybox="gallery" href="slike/hero1.jpg">
-            <img src="slike/hero1.jpg" alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
-              data-aos="zoom-in">
-          </a>
-          <a data-fancybox="gallery" href="slike/hero2.jpg">
-            <img src="slike/hero2.jpg" alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
-              data-aos="zoom-in">
-          </a>
-          <a data-fancybox="gallery" href="slike/hero3.jpg">
-            <img src="slike/hero3.jpg" alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
-              data-aos="zoom-in">
-          </a>
-        </div>
-        <div class="btn-wrapper text-center">
-          <a class="btn btn-primary mt-3" href="">
-            <span class="btn-icon">
-              <img src="img/image-solid.svg" alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave">
-            </span>
-            Pogledaj sve
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- Rezervacija -->
-    <section class="section-padding rezervacija-section" style="background-image: url(slike/hero2.jpg);">
-      <div class="container section-content">
-        <div class="row align-items-center">
-          <div class="col-lg-4">
-            <h2 class="text-center text-lg-end">Kontakt informacije</h2>
-          </div>
-          <div class="col-lg-8">
-            <div class="rezervacije-tekst text-center text-lg-start mb-3">
-              <p>Rezervišite nas na vreme kako biste osigurali nezaboravno iskustvo za vašu proslavu! Tremolo bend je tu
-                da učini vaš poseban dan još posebnijim, bilo da je to svadba, rođendan, krštenje ili bilo koja druga
-                vrsta proslave. Naš bend sa dugogodišnjim iskustvom u muzičkoj industriji pruža vrhunsku zabavu i
-                profesionalan pristup svakom nastupu.</p>
+    <main>
+      <!-- Hero -->
+      <section class="hero-section">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide"
+              style="background-image: url('slike/slika3.jpg')"
+            >
+              <div class="overlay"></div>
             </div>
             <div
-              class="rezervacije-kontakt-wrap justify-content-center justify-content-lg-start d-flex align-items-center">
-              <div class="rezervacije-kontakt">
-                <a href="tel:+123456789"><span class="me-2"><img src="img/phone-solid.svg" alt=""></span>+123 456
-                  789</a>
+              class="swiper-slide"
+              style="background-image: url('slike/slika2.jpg')"
+            >
+              <div class="overlay"></div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="background-image: url('slike/slika1.jpg')"
+            >
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="hero-text">
+          <h1>Zajedno Slavimo Svaki Trenutak</h1>
+          <h4>Vaše Vesele Trenutke Činimo Posebnima</h4>
+          <a
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
+            >KONTAKT</a
+          >
+        </div>
+      </section>
+
+      <!-- O nama -->
+      <section class="about-section section-padding">
+        <div class="container">
+          <h2 class="text-center mb-4">O nama</h2>
+          <div class="highlight-text">
+            <p>
+              Tremolo je bend čiji počeci sežu u 2000. godinu, što nas čini
+              jednim od najdugovječnijih sastava na muzičkoj sceni. Sa
+              višegodišnjim iskustvom u svetu muzike, specijalizirani smo za
+              pružanje nezaboravnih trenutaka na svadbama, krštenjima,
+              rođendanima, kao i u noćnim klubovima širom regiona. Naša strast
+              prema muzici prepoznatljiva je u svakoj izvedbi, stvarajući
+              atmosferu koja ostaje urezana u sećanja naših slušalaca.
+            </p>
+          </div>
+          <div class="clanovi-benda mt-5">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-4 col-lg-3 mb-5 mb-lg-0">
+                <div class="clan-card" data-aos="fade-up">
+                  <div class="clan-slika">
+                    <img
+                      src="slike/clan1.jpg"
+                      alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
+                    />
+                  </div>
+                  <div class="clan-ime">Nemanja</div>
+                  <div class="clan-info">
+                    <h4>Nemanja</h4>
+                    <div class="clan-roles">
+                      <img src="img/guitar.svg" alt="" />
+                      <img src="img/microphone.svg" alt="" />
+                    </div>
+                    <p>
+                      Počeo je da svira u bendu 2005. godine. Dugogodišnje
+                      iskustvo u raznim žanrovima.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="rezervacije-kontakt">
-                <a href="mailto:info@tremoloband.com"><span class="me-2"><img src="img/envelope-solid.svg"
-                      alt=""></span>info@tremoloband.com</a>
+              <div class="col-12 col-md-4 col-lg-3 mb-5 mb-lg-0">
+                <div class="clan-card" data-aos="fade-up">
+                  <div class="clan-slika">
+                    <img
+                      src="slike/clan2.jpg"
+                      alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
+                    />
+                  </div>
+                  <div class="clan-ime">Dijana</div>
+                  <div class="clan-info">
+                    <h4>Dijana</h4>
+                    <div class="clan-roles">
+                      <img src="img/microphone.svg" alt="" />
+                    </div>
+                    <p>
+                      Počeo je da svira u bendu 2005. godine. Dugogodišnje
+                      iskustvo u raznim žanrovima.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3 mb-5 mb-lg-0">
+                <div class="clan-card" data-aos="fade-up">
+                  <div class="clan-slika">
+                    <img
+                      src="slike/clan3.jpg"
+                      alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
+                    />
+                  </div>
+                  <div class="clan-ime">Dragan</div>
+                  <div class="clan-info">
+                    <h4>Dragan</h4>
+                    <div class="clan-roles">
+                      <img src="img/piano-keyboard.svg" alt="" />
+                      <img src="img/microphone.svg" alt="" />
+                    </div>
+                    <p>
+                      Počeo je da svira u bendu 2005. godine. Dugogodišnje
+                      iskustvo u raznim žanrovima.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="kalendar-blok mb-3">
-          <h4 class="mb-5">Provjerite naše slobodne termine</h4>
-          <div id="calendar"></div>
-        </div>
-        <div class="kalendar-tekst text-center">
-          <p>
-            Ne čekajte – rezervišite nas odmah i omogućite svojim gostima vrhunsku zabavu i nezaboravne uspomene!
-          </p>
-        </div>
-        <div class="btn-wrap text-center">
-          <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">KONTAKT</a>
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="footer">
-    <div class="container text-center">
-      <div class="footer-top d-flex align-items-center justify-content-between flex-column flex-lg-row">
-        <div class="footer-logo mb-3">
-          <a href="index.html"><img src="img/tremolo-gold.png"
-              alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"></a>
-        </div>
-        <div class="footer-links mb-3">
-          <a href="index.html">Početna</a>
-          <a href="galerija.html">Galerija</a>
-          <a href="blog.html">Blog</a>
-          <a data-bs-toggle="modal" data-bs-target="#contactModal">Kontakt</a>
-        </div>
-        <div class="social-icons mb-3">
-          <a href="https://instagram.com" target="_blank">
-            <img src="img/instagram.svg" alt="">
-          </a>
-          <a href="https://youtube.com" target="_blank">
-            <img src="img/youtube.svg" alt="">
-          </a>
-          <a href="https://fb.com" target="_blank">
-            <img src="img/facebook.svg" alt="">
-          </a>
-        </div>
-      </div>
-      <p>&copy; 2024 Tremolo. Sva prava zadržana.</p>
-    </div>
-  </footer>
-
-  <!-- Kontakt modal -->
-  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content ">
-        <div class="modal-header">
-          <h4>Rezervišite nas na vreme!</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="modal-contact-info-wrap d-md-flex align-items-center justify-content-md-between mb-4">
-            <div class="modal-contact-info mb-2 mb-md-0"><span class="modal-icons"><img src="img/phone-solid.svg"
-                  alt=""></span>
-              <a href="tel:+123456789">+123 456
-                789</a></div>
-            <div class="modal-contact-info mb-2 mb-md-0"><span class="modal-icons"><img src="img/envelope-solid.svg"
-                  alt=""></span>
-              <a href="mailto:info@tremoloband.com">info@tremoloband.com</a></div>
+      <!-- Repertoar -->
+      <section
+        class="section-padding repertoar-section bg-img-section"
+        style="background-image: url(slike/hero3.jpg)"
+      >
+        <div class="container">
+          <div class="section-content">
+            <h2 class="text-center mb-4">Naš repertoar</h2>
+            <div class="highlight-text">
+              <p>
+                U našem bogatom repertoaru imamo više od 2000 pesama koje
+                obuhvataju domaće i strane hitove, rock, pop, narodnu muziku i
+                mnoge druge žanrove. Kod nas možete izabrati između programskog
+                izbora pesama ili naručiti omiljene pesme po želji vaših
+                gostiju. Za detaljan pregled našeg repertoara kliknite na dugme
+                ispod:
+              </p>
+              <div class="btn-wrap text-center mt-4">
+                <a href="" class="btn btn-gold-outline">Preuzmi repertoar</a>
+              </div>
+            </div>
           </div>
-          <form>
-            <div class="form-floating mb-4">
-              <input type="text" class="form-control" id="fullName" placeholder="Ime i Prezime" required>
-              <label for="fullName">Ime i prezime</label>
+        </div>
+      </section>
+
+      <!-- Video -->
+      <section class="section-padding video-section">
+        <div class="container">
+          <h2 class="mb-4 text-center">Video</h2>
+          <div class="video-wrapper" data-aos="fade-up">
+            <iframe
+              src="https://www.youtube.com/embed/-L7h4zhrJGY?si=BZEicBAq18dgpnST"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="btn-wrapper text-center">
+            <a class="btn btn-primary mt-5" href="" target="_blank">
+              <span class="btn-icon"
+                ><img
+                  src="img/youtube.svg"
+                  alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
+              /></span>
+              Youtube kanal
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galerija -->
+      <section class="section-padding galerija-section">
+        <div class="container">
+          <h2 class="mb-4 text-center">Galerija</h2>
+          <div class="galerija-slika">
+            <a data-fancybox="gallery" href="slike/slika1.jpg">
+              <img
+                src="slike/slika1.jpg"
+                alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
+                data-aos="zoom-in"
+              />
+            </a>
+            <a data-fancybox="gallery" href="slike/slika2.jpg">
+              <img
+                src="slike/slika2.jpg"
+                alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
+                data-aos="zoom-in"
+              />
+            </a>
+            <a data-fancybox="gallery" href="slike/slika3.jpg">
+              <img
+                src="slike/slika3.jpg"
+                alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
+                data-aos="zoom-in"
+              />
+            </a>
+            <a data-fancybox="gallery" href="slike/slika4.jpg">
+              <img
+                src="slike/slika4.jpg"
+                alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
+                data-aos="zoom-in"
+              />
+            </a>
+            <a data-fancybox="gallery" href="slike/slika5.jpg">
+              <img
+                src="slike/slika5.jpg"
+                alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
+                data-aos="zoom-in"
+              />
+            </a>
+          </div>
+          <div class="btn-wrapper text-center">
+            <a class="btn btn-primary mt-3" href="">
+              <span class="btn-icon">
+                <img
+                  src="img/image-solid.svg"
+                  alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
+                />
+              </span>
+              Pogledaj sve
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Rezervacija -->
+      <section
+        class="section-padding rezervacija-section"
+        style="background-image: url(slike/slika1.jpg)"
+      >
+        <div class="container section-content">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <h2 class="text-center text-lg-end">Kontakt informacije</h2>
             </div>
-            <div class="form-floating mb-4">
-              <input type="tel" class="form-control" id="phoneNumber" placeholder="Broj Telefona" required>
-              <label for="phoneNumber">Broj telefona</label>
+            <div class="col-lg-8">
+              <div class="rezervacije-tekst text-center text-lg-start mb-3">
+                <p>
+                  Rezervišite nas na vreme kako biste osigurali nezaboravno
+                  iskustvo za vašu proslavu! Tremolo bend je tu da učini vaš
+                  poseban dan još posebnijim, bilo da je to svadba, rođendan,
+                  krštenje ili bilo koja druga vrsta proslave. Naš bend sa
+                  dugogodišnjim iskustvom u muzičkoj industriji pruža vrhunsku
+                  zabavu i profesionalan pristup svakom nastupu.
+                </p>
+              </div>
+              <div
+                class="rezervacije-kontakt-wrap justify-content-center justify-content-lg-start d-flex align-items-center"
+              >
+                <div class="rezervacije-kontakt">
+                  <a href="tel:+123456789"
+                    ><span class="me-2"
+                      ><img src="img/phone-solid.svg" alt="" /></span
+                    >+123 456 789</a
+                  >
+                </div>
+                <div class="rezervacije-kontakt">
+                  <a href="mailto:bandtremolo@gmail.com"
+                    ><span class="me-2"
+                      ><img src="img/envelope-solid.svg" alt="" /></span
+                    >bandtremolo@gmail.com</a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="form-floating mb-4">
-              <input type="date" class="form-control" id="desiredDate" placeholder="Željeni Datum" required>
-              <label for="desiredDate">Željeni datum</label>
+          </div>
+          <div class="kalendar-blok mb-3">
+            <h4 class="mb-5">Provjerite naše slobodne termine</h4>
+            <div id="calendar"></div>
+          </div>
+          <div class="kalendar-tekst text-center">
+            <p>
+              Ne čekajte – rezervišite nas odmah i omogućite svojim gostima
+              vrhunsku zabavu i nezaboravne uspomene!
+            </p>
+          </div>
+          <div class="btn-wrap text-center">
+            <a
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#contactModal"
+              >KONTAKT</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container text-center">
+        <div
+          class="footer-top d-flex align-items-center justify-content-between flex-column flex-lg-row"
+        >
+          <div class="footer-logo mb-3">
+            <a href="index.html"
+              ><img
+                src="img/tremolo-gold.png"
+                alt="Tremolo band za svadbe,rodjendane,krstenja i ostale proslave"
+            /></a>
+          </div>
+          <div class="footer-links mb-3">
+            <a href="index.html">Početna</a>
+            <a href="galerija.html">Galerija</a>
+            <a href="blog.html">Blog</a>
+            <a data-bs-toggle="modal" data-bs-target="#contactModal">Kontakt</a>
+          </div>
+          <div class="social-icons mb-3">
+            <a href="https://instagram.com" target="_blank">
+              <img src="img/instagram.svg" alt="" />
+            </a>
+            <a href="https://youtube.com" target="_blank">
+              <img src="img/youtube.svg" alt="" />
+            </a>
+            <a href="https://fb.com" target="_blank">
+              <img src="img/facebook.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <p>&copy; 2024 Tremolo. Sva prava zadržana.</p>
+      </div>
+    </footer>
+
+    <!-- Kontakt modal -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Rezervišite nas na vreme!</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              class="modal-contact-info-wrap d-md-flex align-items-center justify-content-md-between mb-4"
+            >
+              <div class="modal-contact-info mb-2 mb-md-0">
+                <span class="modal-icons"
+                  ><img src="img/phone-solid.svg" alt=""
+                /></span>
+                <a href="tel:+123456789">+123 456 789</a>
+              </div>
+              <div class="modal-contact-info mb-2 mb-md-0">
+                <span class="modal-icons"
+                  ><img src="img/envelope-solid.svg" alt=""
+                /></span>
+                <a href="mailto:bandtremolo@gmail.com">bandtremolo@gmail.com</a>
+              </div>
             </div>
-            <div class="form-floating mb-4">
-              <textarea class="form-control" id="message" placeholder="Poruka" rows="6" required></textarea>
-              <label for="message">Poruka</label>
-            </div>
-            <div class="btn-wrap w-100">
-              <button type="submit" class="btn btn-primary w-100">Pošalji</button>
-            </div>
-          </form>
+            <form>
+              <div class="form-floating mb-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  placeholder="Ime i Prezime"
+                  required
+                />
+                <label for="fullName">Ime i prezime</label>
+              </div>
+              <div class="form-floating mb-4">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phoneNumber"
+                  placeholder="Broj Telefona"
+                  required
+                />
+                <label for="phoneNumber">Broj telefona</label>
+              </div>
+              <div class="form-floating mb-4">
+                <input
+                  type="date"
+                  class="form-control"
+                  id="desiredDate"
+                  placeholder="Željeni Datum"
+                  required
+                />
+                <label for="desiredDate">Željeni datum</label>
+              </div>
+              <div class="form-floating mb-4">
+                <textarea
+                  class="form-control"
+                  id="message"
+                  placeholder="Poruka"
+                  rows="6"
+                  required
+                ></textarea>
+                <label for="message">Poruka</label>
+              </div>
+              <div class="btn-wrap w-100">
+                <button type="submit" class="btn btn-primary w-100">
+                  Pošalji
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-  </script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="assets/main.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var swiper = new Swiper(".swiper-container", {
-        loop: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".swiper-container", {
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
       });
-    });
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      Fancybox.bind("[data-fancybox]", {
-        loop: true,
-        transitionEffect: "slide",
-        buttons: ["slideShow", "fullScreen", "thumbs", "close"]
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        Fancybox.bind("[data-fancybox]", {
+          loop: true,
+          transitionEffect: "slide",
+          buttons: ["slideShow", "fullScreen", "thumbs", "close"],
+        });
       });
-    });
-  </script>
-  <script>
-    AOS.init();
-  </script>
+    </script>
+    <script>
+      AOS.init();
+    </script>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("calendar");
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var calendarEl = document.getElementById('calendar');
-
-      function getDefaultView() {
-        return window.innerWidth < 765 ? 'listMonth' : 'dayGridMonth';
-      }
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: getDefaultView(),
-        contentHeight: 'auto',
-        responsive: true,
-        locale: 'sr',
-        firstDay: 1,
-        googleCalendarApiKey: 'AIzaSyB8GQ48tJTkAs2D8fTVFNVbWzq-GsnTYU8',
-        events: {
-          googleCalendarId: 'f6c0bad64942fc3f59f788d71f310ac6cacfcb8d420535a10072b9286e2b6a53@group.calendar.google.com'
-        },
-        eventContent: function (arg) {
-          var eventTitle = arg.event.title || 'Dogadjaj';
-          var displayText = (arg.event.extendedProps.busyStatus != 'busy') ? 'Zauzeti' : eventTitle;
-
-          return {
-            html: '<div style="color: red; padding: 5px;">' + displayText + '</div>'
-          };
+        function getDefaultView() {
+          return window.innerWidth < 765 ? "listMonth" : "dayGridMonth";
         }
-      });
-      window.addEventListener('resize', function () {
-        calendar.changeView(getDefaultView());
-      });
-      calendar.render();
-    });
-  </script>
-</body>
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: getDefaultView(),
+          contentHeight: "auto",
+          responsive: true,
+          locale: "sr",
+          firstDay: 1,
+          googleCalendarApiKey: "AIzaSyB8GQ48tJTkAs2D8fTVFNVbWzq-GsnTYU8",
+          events: {
+            googleCalendarId:
+              "f6c0bad64942fc3f59f788d71f310ac6cacfcb8d420535a10072b9286e2b6a53@group.calendar.google.com",
+          },
+          eventContent: function (arg) {
+            var eventTitle = arg.event.title || "Dogadjaj";
+            var displayText =
+              arg.event.extendedProps.busyStatus != "busy"
+                ? "Zauzeti"
+                : eventTitle;
 
+            return {
+              html:
+                '<div style="color: red; padding: 5px;">' +
+                displayText +
+                "</div>",
+            };
+          },
+        });
+        window.addEventListener("resize", function () {
+          calendar.changeView(getDefaultView());
+        });
+        calendar.render();
+      });
+    </script>
+  </body>
 </html>

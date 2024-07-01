@@ -40,7 +40,6 @@ h6 {
 
 h1 {
   font-size: 3.5rem;
-  font-style: italic;
 }
 
 h2 {
@@ -75,7 +74,7 @@ h2 {
 
 .btn-primary:hover,
 .btn-primary:active,
-:not(.btn-check)+.btn:active,
+:not(.btn-check) + .btn:active,
 .btn:first-child:active {
   background-color: #b8902e;
   color: var(--text-color);
@@ -150,7 +149,7 @@ h2 {
 .nav-item .nav-link.btn:hover,
 .nav-item .nav-link.btn:active,
 .nav-item .nav-link.btn:focus,
-:not(.nav-item .nav-link.btn-check)+.nav-item .nav-link.btn:active {
+:not(.nav-item .nav-link.btn-check) + .nav-item .nav-link.btn:active {
   background-color: #b8902e;
   color: var(--text-color);
 }
@@ -207,7 +206,8 @@ h2 {
 .social-network-icons-nav a img {
   height: 30px;
   width: auto;
-  filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(1033%) hue-rotate(337deg) brightness(94%) contrast(75%);
+  filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(1033%)
+    hue-rotate(337deg) brightness(94%) contrast(75%);
 }
 
 .social-network-icons-nav .nav-link img {
@@ -217,7 +217,8 @@ h2 {
 .social-network-icons-nav .nav-link:hover img {
   transform: translateY(-5px);
   animation: bounce 0.5s infinite alternate;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(93deg) brightness(103%) contrast(103%);
 }
 
 @keyframes bounce {
@@ -246,7 +247,6 @@ h2 {
 .swiper-slide {
   position: relative;
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -275,7 +275,6 @@ h2 {
   margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--text-color);
-  font-style: italic;
   max-width: 600px;
 }
 
@@ -324,7 +323,7 @@ h2 {
   cursor: pointer;
 }
 
-.clan-card:hover .clan-ime{
+.clan-card:hover .clan-ime {
   color: var(--background-color);
   background-color: var(--background-color);
 }
@@ -376,7 +375,8 @@ h2 {
   margin-right: 5px;
   height: 20px;
   width: auto;
-  filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(1033%) hue-rotate(337deg) brightness(94%) contrast(75%);
+  filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(1033%)
+    hue-rotate(337deg) brightness(94%) contrast(75%);
 }
 
 .bg-img-section {
@@ -462,7 +462,6 @@ h2 {
 
 .rezervacija-section {
   background-attachment: fixed;
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -474,7 +473,7 @@ h2 {
   bottom: 0;
   right: 0;
   left: 0;
-  content: '';
+  content: "";
   background-color: var(--background-color);
   opacity: 0.7;
   z-index: 1;
@@ -489,10 +488,10 @@ h2 {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--text-color);
-  transition:  0.3s ease;
+  transition: 0.3s ease;
 }
 
-.rezervacije-kontakt a:hover{
+.rezervacije-kontakt a:hover {
   color: var(--primary-color);
 }
 
@@ -501,15 +500,15 @@ h2 {
 }
 
 .rezervacije-kontakt img {
-  filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(1033%) hue-rotate(337deg) brightness(94%) contrast(75%);
+  filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(1033%)
+    hue-rotate(337deg) brightness(94%) contrast(75%);
   height: 24px;
   width: auto;
 }
 
-.rezervacije-tekst p:last-child{
+.rezervacije-tekst p:last-child {
   margin-bottom: 0px;
 }
-
 
 .kalendar-blok h4 {
   color: var(--text-color);
@@ -519,9 +518,7 @@ h2 {
   text-align: center;
   margin: 2rem auto;
   padding: 1rem;
-
 }
-
 
 #calendar {
   background-color: #ffffff;
@@ -530,7 +527,6 @@ h2 {
   max-width: 600px;
   margin: 0 auto;
 }
-
 
 .fc a {
   color: var(--background-color);
@@ -544,13 +540,15 @@ h2 {
   font-weight: bold;
 }
 
-.fc-daygrid-event-harness a{
+.fc-daygrid-event-harness a {
   background-color: transparent;
   text-align: center;
   border: 1px solid red;
 }
 
-.fc .fc-button-primary:focus, .fc .fc-button-primary:not(:disabled).fc-button-active:focus, .fc .fc-button-primary:not(:disabled):active:focus {
+.fc .fc-button-primary:focus,
+.fc .fc-button-primary:not(:disabled).fc-button-active:focus,
+.fc .fc-button-primary:not(:disabled):active:focus {
   box-shadow: none;
 }
 
@@ -591,7 +589,6 @@ h2 {
   text-decoration: underline;
 }
 
-
 .footer .social-icons a {
   text-decoration: none;
   margin: 0 10px;
@@ -602,16 +599,19 @@ footer .social-icons img {
   transition: width 0.3s ease, height 0.3s ease;
   height: 20px;
   width: auto;
-  filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(1033%) hue-rotate(337deg) brightness(94%) contrast(75%);
+  filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(1033%)
+    hue-rotate(337deg) brightness(94%) contrast(75%);
 }
 
 footer .social-icons img:hover {
-  filter: brightness(0) saturate(100%) invert(97%) sepia(100%) saturate(13%) hue-rotate(209deg) brightness(105%) contrast(105%);
+  filter: brightness(0) saturate(100%) invert(97%) sepia(100%) saturate(13%)
+    hue-rotate(209deg) brightness(105%) contrast(105%);
 }
 
 /* Kontakt Modal */
 
-.modal-body, .modal-header {
+.modal-body,
+.modal-header {
   background-color: rgba(10, 10, 10, 0.9) !important;
 }
 
@@ -630,7 +630,8 @@ footer .social-icons img:hover {
 .modal-icons img {
   height: 24px;
   width: auto;
-  filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(1033%) hue-rotate(337deg) brightness(94%) contrast(75%);
+  filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(1033%)
+    hue-rotate(337deg) brightness(94%) contrast(75%);
 }
 
 .modal-contact-info {
@@ -644,7 +645,7 @@ footer .social-icons img:hover {
 .modal-contact-info a {
   text-decoration: none;
   color: var(--text-color);
-  transition:  0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .modal-contact-info a:hover {
@@ -665,11 +666,10 @@ footer .social-icons img:hover {
   color: var(--background-color);
 }
 
-
-
 /* Responsive */
 
-@media (max-width: 1399.98px) {}
+@media (max-width: 1399.98px) {
+}
 
 @media (max-width: 1199.98px) {
   .hero-text h1 {
@@ -692,7 +692,7 @@ footer .social-icons img:hover {
   .clan-info h4 {
     font-size: 18px;
   }
-  .clan-info p{
+  .clan-info p {
     font-size: 14px;
   }
   .rezervacije-tekst p {
@@ -764,7 +764,7 @@ footer .social-icons img:hover {
   .clan-ime {
     font-size: 1.3rem;
   }
-  .rezervacije-kontakt a{
+  .rezervacije-kontakt a {
     font-size: 16px;
   }
   .rezervacije-kontakt img {
@@ -806,7 +806,7 @@ footer .social-icons img:hover {
   .clan-ime {
     font-size: 1.2rem;
   }
-  .rezervacije-kontakt a{
+  .rezervacije-kontakt a {
     font-size: 14px;
   }
   .rezervacije-kontakt img {
@@ -814,7 +814,7 @@ footer .social-icons img:hover {
   }
   .fc .fc-toolbar-title {
     font-size: 18px;
-  } 
+  }
   .fc .fc-today-button {
     display: none;
   }
@@ -822,7 +822,3 @@ footer .social-icons img:hover {
     font-size: 16px;
   }
 }
-
-
-
-
