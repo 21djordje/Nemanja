@@ -92,6 +92,13 @@ h2 {
   color: var(--background-color);
 }
 
+.bg-img-section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 /* Navbar */
 
 .navbar {
@@ -295,7 +302,44 @@ h2 {
   background: #d4af37;
 }
 
-/* Sections */
+/* Page Hero */
+
+.page-hero {
+  position: relative;
+  min-height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.page-hero::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background-color);
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.page-hero-content {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+h1.page-title {
+  font-size: 5rem;
+  color: #fff;
+}
+
+/* O nama */
 
 .highlight-text {
   max-width: 800px;
@@ -312,7 +356,7 @@ h2 {
 .clan-card {
   border-radius: 8px;
   background-color: var(--text-color);
-  box-shadow: 0px 4px 8px var(--primary-color);
+  box-shadow: 0px 4px 4px var(--primary-color);
   transition: box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -379,12 +423,7 @@ h2 {
     hue-rotate(337deg) brightness(94%) contrast(75%);
 }
 
-.bg-img-section {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
+/* Repertoar */
 
 .repertoar-section {
   position: relative;
@@ -405,6 +444,8 @@ h2 {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
+
+/* Video */
 
 .video-wrapper {
   position: relative;
@@ -434,6 +475,8 @@ h2 {
 .galerija-section .btn-primary:active {
   color: var(--background-color);
 }
+
+/* Galerija*/
 
 .galerija-slika a {
   max-height: 200px;
@@ -516,8 +559,7 @@ h2 {
 
 .kalendar-blok {
   text-align: center;
-  margin: 2rem auto;
-  padding: 1rem;
+  margin: 0px auto;
 }
 
 #calendar {
@@ -704,6 +746,12 @@ footer .social-icons img:hover {
   .rezervacije-kontakt img {
     height: 20px;
   }
+  .page-hero {
+    min-height: 350px;
+  }
+  h1.page-title {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -733,6 +781,15 @@ footer .social-icons img:hover {
   }
   .rezervacija-section {
     background-position: center;
+  }
+  .page-hero {
+    min-height: 300px;
+  }
+  h1.page-title {
+    font-size: 3.5rem;
+  }
+  .page-hero-content {
+    bottom: 50px;
   }
 }
 
@@ -772,6 +829,12 @@ footer .social-icons img:hover {
   }
   .rezervacije-kontakt img {
     height: 16px;
+  }
+  .page-hero {
+    min-height: 250px;
+  }
+  h1.page-title {
+    font-size: 2.5rem;
   }
 }
 
@@ -823,5 +886,14 @@ footer .social-icons img:hover {
   }
   .fc .fc-button {
     font-size: 16px;
+  }
+  .page-hero {
+    min-height: 220px;
+  }
+  .page-hero-content {
+    bottom: 30px;
+  }
+  h1.page-title {
+    font-size: 2rem;
   }
 }
