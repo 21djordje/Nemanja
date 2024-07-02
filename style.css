@@ -612,6 +612,10 @@ h1.page-title {
   margin: 0 auto;
 }
 
+.fc .fc-today-button {
+  display: none;
+}
+
 /* Blog */
 
 .blog-card {
@@ -953,9 +957,6 @@ footer .social-icons img:hover {
   }
   .fc .fc-toolbar-title {
     font-size: 18px;
-  }
-  .fc .fc-today-button {
-    display: none;
   }
   .fc .fc-button {
     font-size: 16px;
