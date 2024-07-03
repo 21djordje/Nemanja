@@ -307,6 +307,12 @@ h2 {
   background: var(--swiper-pagination-bullet-inactive-color, #d4af37);
 }
 
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 10px;
+}
+
 .swiper-pagination-bullet-active {
   background: #d4af37;
 }

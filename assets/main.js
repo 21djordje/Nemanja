@@ -10,7 +10,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Provjera da li svaka ima alt atribut
+// Provjera da li svaka slika ima alt atribut
 let images = document.querySelectorAll("img");
 
 images.forEach((img) => {
