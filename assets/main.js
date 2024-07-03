@@ -20,11 +20,12 @@ images.forEach((img) => {
 });
 
 // Provjera da li svaki a tag ima href
-document.addEventListener("DOMContentLoaded", function () {
+window.onload = function () {
   const links = document.querySelectorAll("a");
+
   links.forEach(function (link) {
-    if (!link.hasAttribute("href") || link.getAttribute("href") === "#") {
-      link.setAttribute("href", "");
+    if (!link.hasAttribute("href") || link.getAttribute("href") === "") {
+      link.setAttribute("href", "#");
     }
   });
-});
+};
