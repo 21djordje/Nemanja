@@ -553,6 +553,35 @@
       calendar.render();
     });
   </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    function replaceNoEventsText() {
+      var noEventsElement = document.querySelector(".fc-list-empty-cushion");
+      if (noEventsElement) {
+        noEventsElement.textContent = "Nema događaja u ovom mesecu";
+      }
+    }
+
+    
+    replaceNoEventsText();
+
+   
+    var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        replaceNoEventsText();
+      });
+    });
+
+   
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+  });
+</script>
+
+
 </body>
 
 </html>
