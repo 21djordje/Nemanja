@@ -702,6 +702,12 @@ h1.page-title {
 .blog-share img {
   height: 28px;
   width: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-share img:hover {
+  transform: translateY(-5px);
+  animation: bounce 0.5s infinite alternate;
 }
 
 /* Footer */
