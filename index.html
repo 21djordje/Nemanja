@@ -330,8 +330,7 @@
           <h2 class="mb-4 text-center">Video</h2>
           <div class="video-wrapper" data-aos="fade-up">
             <iframe
-              loading="lazy"
-              src="https://www.youtube.com/embed/-L7h4zhrJGY?si=BZEicBAq18dgpnST"
+              src="https://www.youtube-nocookie.com/embed/-L7h4zhrJGY?si=AHWojb5FmYMl1m-C"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
@@ -555,6 +554,8 @@
                   type="text"
                   class="form-control"
                   id="fullName"
+                  name="fullName"
+                  autocomplete="name"
                   placeholder="Ime i Prezime"
                   required
                 />
@@ -565,6 +566,8 @@
                   type="tel"
                   class="form-control"
                   id="phoneNumber"
+                  name="phoneNumber"
+                  autocomplete="name"
                   placeholder="Broj Telefona"
                   required
                 />
@@ -576,7 +579,8 @@
                   class="form-control"
                   id="desiredDate"
                   placeholder="Željeni Datum"
-                  required
+                  name="desiredDate"
+                  autocomplete="name"
                 />
                 <label for="desiredDate">Željeni datum</label>
               </div>
@@ -584,6 +588,7 @@
                 <textarea
                   class="form-control"
                   id="message"
+                  name="message"
                   placeholder="Poruka"
                   rows="6"
                   required
@@ -657,7 +662,6 @@
         var calendar = new FullCalendar.Calendar(calendarEl, {
           initialView: getDefaultView(),
           contentHeight: "auto",
-          responsive: true,
           locale: "sr",
           firstDay: 1,
           googleCalendarApiKey: "AIzaSyBTs7L0P9dR9xMjSKxSwWpW2bcnE6WWCrE",
