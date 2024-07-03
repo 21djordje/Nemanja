@@ -18,3 +18,13 @@ images.forEach((img) => {
     img.alt = "Tremolo band za svadbe, rodjendane, krštenja i ostale proslave";
   }
 });
+
+// Provjera da li svaki a tag ima href
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll("a");
+  links.forEach(function (link) {
+    if (!link.hasAttribute("href") || link.getAttribute("href") === "#") {
+      link.setAttribute("href", "");
+    }
+  });
+});
