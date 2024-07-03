@@ -423,7 +423,13 @@ h1.page-title {
   overflow-y: auto;
 }
 
-.clan-info h4,
+.clan-info-ime {
+  color: var(--primary-color);
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+}
+
+.clan-info .clan-info-ime,
 .clan-info p {
   margin: 0;
   padding: 5px 0;
@@ -567,8 +573,9 @@ h1.page-title {
   margin-bottom: 0px;
 }
 
-.kalendar-blok h4 {
+.kalendar-blok h5 {
   color: var(--text-color);
+  font-size: 1.5rem;
 }
 
 .kalendar-blok {
@@ -834,7 +841,7 @@ footer .social-icons img:hover {
   .nav-link {
     font-size: 1rem;
   }
-  .clan-info h4 {
+  .clan-info .clan-info-ime {
     font-size: 18px;
   }
   .clan-info p {
