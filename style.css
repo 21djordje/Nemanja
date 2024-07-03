@@ -99,6 +99,15 @@ h2 {
   background-attachment: fixed;
 }
 
+.gold-filter {
+  filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(1033%)
+    hue-rotate(337deg) brightness(94%) contrast(75%);
+}
+
+.post-content ol li::marker {
+  color: var(--primary-color);
+}
+
 /* Navbar */
 
 .navbar {
@@ -123,7 +132,7 @@ h2 {
 
 .menu-scrolled {
   background-color: rgba(10, 10, 10, 0.8);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -625,7 +634,7 @@ h1.page-title {
   display: flex;
   height: 100%;
   flex-direction: column;
-  box-shadow: 0px 4px 4px var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 .blog-card-img {
@@ -667,23 +676,30 @@ h1.page-title {
   font-size: 14px;
 }
 
-.blog-card-footer {
+.blog-share {
   margin-top: auto;
   display: flex;
-  justify-content: center;
   padding: 10px 0px;
-  border-top: 1px solid var(--primary-color);
 }
 
-.blog-card-footer a {
+.blog-card-share {
+  border-top: 1px solid var(--primary-color);
+  justify-content: center;
+}
+
+.blog-post-share {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.blog-share a {
   margin-right: 10px;
 }
 
-.blog-card-footer a:last-child {
+.blog-share a:last-child {
   margin-right: 0px;
 }
 
-.blog-card-footer img {
+.blog-share img {
   height: 28px;
   width: auto;
 }
